@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym pocetna
+{% endblock title %}
+
+{% block description %}
+    Deskripcija
+{% endblock description %}
+
+{% block content %}
+    <section class="hero-section">     
+        <div class="grid-2-col">
+            <div class="centered-cell">
+                <h1>Dostignite vaše ciljeve u<br><span class="heading-span">Fitness Centar Spartans Gym-u</span></h1>
+                <p>Mesto gde se snovi ostvaruju - mi smo više od teretane. Poseti nas i oseti magiju teretane!</p>
+
+                <div class="inline-div">
+                    <button class="primary-button">kontaktiraj nas</button>
+                    <button class="secondary-button">pogledaj više</button>
+                </div>
+            </div>
+
+            <div class="centered-cell">
+                <img class="hero-img" src="{{ url_for('static', filename='slike/logo.jpeg') }}" alt="logo">
+            </div>
+        </div>
+    </section>
+{% endblock content %}
