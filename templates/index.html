@@ -9,20 +9,212 @@
 {% endblock description %}
 
 {% block content %}
-    <section class="hero-section">     
-        <div class="grid-2-col">
-            <div class="centered-cell">
-                <h1>Dostignite vaše ciljeve u<br><span class="heading-span">Fitness Centar Spartans Gym-u</span></h1>
-                <p>Mesto gde se snovi ostvaruju - mi smo više od teretane. Poseti nas i oseti magiju teretane!</p>
+    <main> 
+        <section class="hero-section">
+            <video autoplay muted loop id="my-video">
+                <source src="{{ url_for('static', filename='slike/video.mp4') }}" type="video/mp4">
+            </video> 
 
-                <div class="inline-div">
-                    <button class="primary-button">kontaktiraj nas</button>
-                    <button class="secondary-button">pogledaj više</button>
+
+            <div class="container">
+                <div class="centered-cell">
+                    <h1>Dostignite vaše ciljeve u<br><span class="heading-span">Fitness Centar Spartans Gym-u</span></h1>
+                    <p>Mesto gde se snovi ostvaruju - mi smo više od teretane. Poseti nas i oseti magiju teretane!</p>
+    
+                    <div class="inline-div">
+                        <button class="primary-button">kontaktiraj nas</button>
+                        <button class="secondary-button">pogledaj više</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="stats-section">
+        <div class="container">
+            <ul class="stats-div">
+                <li class="centered-div right-border">
+                    <p><strong class="stats-span">3</strong> teretane</p>
+                    <small>3 vrhunski opremljene teretane</small>
+                </li>
+
+                <li class="centered-div right-border">
+                    <p><strong class="stats-span">10</strong> godina iskustva</p>
+                    <small>dugogodišnje iskustvo i poverenje</small>
+                </li>
+
+                <li class="centered-div right-border">
+                    <p><strong class="stats-span">5</strong> stručnih trenera</p>
+                    <small>profesionalni i druželjubivi - uvek uz vas</small>
+                </li>
+
+                <li class="centered-div">
+                    <p><strong class="stats-span">500+</strong> zadovoljnih vežbača</p>
+                    <small>iskustvo vežbača nam je najbitnije</small>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="home-services-section">
+        <h2>Naše usluge</h2>
+
+        <div class="grid-3-col">
+            <div class="services-card">
+                    <h3 class="green-text">Personalni trening</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="inline-div services-link">
+                        <strong>pogledaj detaljnije</strong>
+                        <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
+                    </div>
+            </div>
+
+            <div class="services-card">
+                    <h3 class="green-text">Polu-personalni trening</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="inline-div services-link">
+                        <strong>pogledaj detaljnije</strong>
+                        <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
+                    </div>
+            </div>
+
+            <div class="services-card">
+                    <h3 class="green-text">Grupni trening</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="inline-div services-link">
+                        <strong>pogledaj detaljnije</strong>
+                        <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
+                    </div>
+            </div>
+        </div>
+
+        <button class="primary-button green">pogledaj detaljnije</button>
+    </section>
+
+    <section class="home-gym-section">
+        <h2>Naše teretane</h2>
+
+        <div class="grid-3-col">
+            <div class="gym-card gym1">
+                <div class="black-mask">
+                    <h3 class="orange-text">GYM 1</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="secondary-button">pogledaj detaljnije</button>
                 </div>
             </div>
 
-            <div class="centered-cell">
-                <img class="hero-img" src="{{ url_for('static', filename='slike/logo.jpeg') }}" alt="logo">
+            <div class="gym-card gym2">
+                <div class="black-mask">
+                    <h3 class="orange-text">GYM 2</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="secondary-button">pogledaj detaljnije</button>
+                </div>
+            </div>
+
+            <div class="gym-card gym3">
+                <div class="black-mask">
+                    <h3 class="orange-text">GYM 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="secondary-button">pogledaj detaljnije</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2>Upoznajte naše članove ekipe</h2>
+
+        <div class="grid-3-col">
+            <div class="team-card" id="dejan">
+                <div class="team-name">
+                    <h3>Dejan Mladenović</h3>
+                    <p>Ja sam Dejan Mladenovic, Master profesor fizickog vaspitanja i sporta univerziteta u Beogradu.</p>
+                    <p>Iza mene je 10 godina iskustva u radu sa ljudima i ko zna koliko razlicitih vrsta treninga.</p>
+                    <p>A moj cilj je da pokazem ljudima u Zapadnoj Srbiji znacaj fizicke aktivnosti za njihovo fizicko i mentalno zdravlje. Da pored toga sto sam trener budem i covek, psihotarapeut i pomognem ljudima da poboljsaju kvalitet svog zivotu!</p>
+                    <strong>Vidimo se na treningu!</strong>
+                </div>
+            </div>
+
+            <div class="team-card" id="mali">
+                <div class="team-name">
+                    <h3>Ivan Petrović</h3>
+                    <p>Prvi trener u nasem timu je jedan od najvecih miljenika medju vezbacima, a to je dobro poznati Ivan Petrovic poznatiji kao Mali. Ivan je takodje apsolvent na Fakultetu sporta i fizickog vaspitanja u Beogradu, smer akademske studije i veoma je blizu da postane i Diplomirani profesor.</p>
+                    <p>Odmah se videlo da je zeljan znanja, gladan uspeha i oran da radi sve sto treba ne bi li naucio sto vise ne samo o treningu nego i o vodjenju kompletnog posla.</p>
+                    <p>Brzo je preuzeo vodjenje teretane na Ubu i skinuo veliki tereten sa mene kao osobu koja je do njegovog dolaska morala sve to sama da radi, a to ga je odmah prekvalifikovalo u direktora teretane na Ubu.</p>
+                    <strong>Vidimo se na treningu!</strong>
+                </div>
+            </div>
+
+            <div class="team-card" id="somi">
+                <div class="team-name">
+                    <h3>Miloš Ivanović</h3>
+                    <p>Drugi trener u nasem timu je Milos Ivanović koga ceo Ub i Lajkovac znaju kao Šomi.</p>
+                    <p>Uvek raspolozen, sarmantan i nasmejan trener je ono sto bi svaki vezbac pozeleo, a Somi ja bas takav. Pored toga je i veliki profesionalac koji kroz salu i zabavu zna da Vas motivise i nagovori da uradite onoliko koliko je on zamislio da mozete.</p>
+                    <p>Vi slobodno dodjite na probni trening u teretanu u Lajkovac i uverite se u sve ovo o cemu sam pricao.</p>
+                    <strong>Vidimo se na treningu!</strong>
+                </div>
+            </div>
+
+            <div class="team-card" id="markec">
+                <div class="team-name">
+                    <h3>Stefan Marković</h3>
+                    <p>Treci trener sto se tice jaceg dela tima je Stefan Markovic poznatiji kao Markec.</p>
+                    <p>Dok je studirao radio je u nekoliko teretana u Beogradu i nakon privodjenja studija kraju vratio se u radni grad gde smo se vrlo lako dogovorili za prosirenje saradnje i sto se teretane tice.</p>
+                    <p>Stefana odlikuje to sto od svakog vezbaca trazi 110%, gleda da iz Vas izvuce maksimum i da sto bolje odradite trening. Dubokog glasa, profesionalan i uvek zanimljiv sa njegovim pricama odradicete trening sa njim, a da necete ni osetiti!</p>
+                    <strong>Vidimo se na treningu!</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h2>Šta misle naši vežbači</h2>
+
+        <div class="container">
+            <div class="slider">
+                <div class="slides" id="slideContainer">
+                    <div class="slide">
+                        <img class="testimonial-img" src="{{ url_for('static', filename='slike/mirko.jpg') }}" alt="">
+                        <div class="centered-div">
+                            <h3>Mirko Mirkovic 1</h3>
+                            <p>Odlicna teretana, vrhunske sprave i ljubazno osoblje i teretana je veoma cista, za svaku preporuku!</p>
+                            <small>Gym 3</small>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="testimonial-img" src="{{ url_for('static', filename='slike/mirko.jpg') }}" alt="">
+                        <div class="centered-div">
+                            <h3>Mirko Mirkovic 1</h3>
+                            <p>Odlicna teretana, vrhunske sprave i ljubazno osoblje i teretana je veoma cista, za svaku preporuku!</p>
+                            <small>Gym 3</small>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="testimonial-img" src="{{ url_for('static', filename='slike/mirko.jpg') }}" alt="">
+                        <div class="centered-div">
+                            <h3>Mirko Mirkovic 1</h3>
+                            <p>Odlicna teretana, vrhunske sprave i ljubazno osoblje i teretana je veoma cista, za svaku preporuku!</p>
+                            <small>Gym 3</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="nav-btn prev">❮</button>
+                <button class="nav-btn next">❯</button>
+
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ne čekajte - zagovorite vaš termin odmah!</h2>
+                <p>Ne čekaj ponedeljak – najbolji trenutak da počneš je upravo sada! Zakaži svoj termin i napravi prvi korak ka snažnijem i zdravijem sebi. Tvoja transformacija počinje onog trenutka kada odlučiš da kreneš.</p>
+                <button class="primary-button">Kontaktiraj nas</button>
             </div>
         </div>
     </section>
