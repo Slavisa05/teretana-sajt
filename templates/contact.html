@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym kontakt
+{% endblock title %}
+
+{% block description %}
+    Deskripcija 5
+{% endblock description %}
+
+{% block content %}
+    <main>
+        <section class="contact-hero-section">
+            <div class="grid-2-col">
+                <div class="centered-cell">
+                    <div class="inline-div">
+                        <h1>Imate neko pitanje?</h1>
+                        <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+                    </div>
+                    
+                    <p>Napisite nam poruku i odgovorićemo vam u najkraćem mogućem roku.</p>
+                </div>
+
+                <div>
+                    <form>
+                        <div class="inline-div">
+                            <label for="name">Ime</label>
+                        </div>
+                        <input type="text" id="name" name="name" required placeholder="Marko Marković">
+        
+                        <div class="inline-div">
+                            <label for="email">Email</label>
+                        </div>
+                        <input type="email" id="email" name="email" required placeholder="markomarkovic@gmail.com">
+        
+                        <div class="inline-div">
+                            <label for="message">Poruka</label>
+                        </div>
+                        <textarea id="message" name="message" required placeholder="Zdravo, želeo bih da se prijavim za ..."></textarea>
+        
+                        <div class="inline-div">
+                            <input class="primary-button" type="submit" value="pošalji">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content %}

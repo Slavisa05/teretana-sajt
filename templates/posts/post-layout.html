@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Title block
+        {% endblock title %}
+    </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='slike/logo.ico') }}">
+    <meta name="description" content="{% block description %} Description {% endblock description %}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include "navbar.html" %}
+
+    <main>
+        <section class="blog-post-hero">
+            <div class="container smaller">
+                <div class="inline-div full-width">
+                    <a href="{{ url_for('blog') }}">< Vidi sve blog postove</a>
+                </div>
+
+                <div class="blog-img-div">
+                    {% block image %}{% endblock image %}
+                    {% block blog_post_heading %}{% endblock blog_post_heading %}
+                </div>
+
+                <div class="inline-div full-width">
+                    {% block date %}{% endblock date %}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="blog-post-section">
+        <div class="grid-2-col">
+            <div>
+                <div class="left-centered-cell sticky-div">
+                    {% block content_table %}{% endblock content_table %}
+                </div>
+            </div>
+
+            <div class="left-centered-cell">
+                {% block content %}{% endblock content %}
+            </div>
+        </div>
+    </section>
+
+    {% include "cta.html" %}
+
+    {% include "footer.html" %}
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

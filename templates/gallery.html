@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym gallery
+{% endblock title %}
+
+{% block description %}
+    Deskripcija 3
+{% endblock description %}
+
+{% block content %}
+    <main>
+        <section class="gallery-section"> 
+            <div class="container">
+                <h1>Galerija slika</h1>
+
+                <div class="inline-div buttons-wrapper">
+                    <button class="secondary-button active" id="gym1">Gym 1</button>
+                    <button class="secondary-button" id="gym2">Gym 2</button>
+                    <button class="secondary-button" id="gym3">Gym 3</button>
+                </div>
+
+                <div class="tab-wrapper">
+                    <div class="gallery-grid active" id="gym1-div">
+                        <img class="gallery-item gym1" data-group="gym1" src="{{ url_for('static', filename='slike/dejan.jpg') }}" alt="gym 1 - prva slika">
+                        <img class="gallery-item gym1" data-group="gym1" src="{{ url_for('static', filename='slike/gym2.jpg') }}" alt="gym 1 - druga slika">
+                        <img class="gallery-item gym1" data-group="gym1" src="{{ url_for('static', filename='slike/gym3.jpg') }}" alt="gym 1 - treca slika">
+                    </div>
+
+                    <div class="gallery-grid" id="gym2-div">
+                        <img class="gallery-item gym2" data-group="gym2" src="{{ url_for('static', filename='slike/mali.jpg') }}" alt="gym 1 - prva slika">
+                        <img class="gallery-item gym2" data-group="gym2" src="{{ url_for('static', filename='slike/gym2.jpg') }}" alt="gym 1 - druga slika">
+                        <img class="gallery-item gym2" data-group="gym2" src="{{ url_for('static', filename='slike/gym3.jpg') }}" alt="gym 1 - treca slika">
+                    </div>
+
+                    <div class="gallery-grid" id="gym3-div">
+                        <img class="gallery-item gym3" data-group="gym3" src="{{ url_for('static', filename='slike/somi.jpg') }}" alt="gym 1 - prva slika">
+                        <img class="gallery-item gym3" data-group="gym3" src="{{ url_for('static', filename='slike/gym2.jpg') }}" alt="gym 1 - druga slika">
+                        <img class="gallery-item gym3" data-group="gym3" src="{{ url_for('static', filename='slike/gym3.jpg') }}" alt="gym 1 - treca slika">
+                        <img class="gallery-item gym3" data-group="gym3" src="{{ url_for('static', filename='slike/gym3.jpg') }}" alt="gym 1 - treca slika">
+                    </div>
+                </div>
+
+                <div class="lightbox" id="lightbox">
+                    <span class="close-btn">&times;</span>
+                    <div class="lightbox-content">
+                        <img id="lightbox-img" src="" alt="">
+                        <div class="lightbox-nav">
+                            <button class="prev-btn">❮</button>
+                            <button class="next-btn">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content %}

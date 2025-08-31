@@ -22,7 +22,7 @@
                     <p>Mesto gde se snovi ostvaruju - mi smo više od teretane. Poseti nas i oseti magiju teretane!</p>
     
                     <div class="inline-div">
-                        <button class="primary-button">kontaktiraj nas</button>
+                        <button class="primary-button contact-button">kontaktiraj nas</button>
                         <button class="secondary-button">pogledaj više</button>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
         </section>
     </main>
 
-    <section class="stats-section">
+    <section class="stats-section" id="1">
         <div class="container">
             <ul class="stats-div">
                 <li class="centered-div right-border">
@@ -44,7 +44,7 @@
                 </li>
 
                 <li class="centered-div right-border">
-                    <p><strong class="stats-span">5</strong> stručnih trenera</p>
+                    <p><strong class="stats-span">4</strong> stručna trenera</p>
                     <small>profesionalni i druželjubivi - uvek uz vas</small>
                 </li>
 
@@ -57,49 +57,43 @@
     </section>
 
     <section class="home-services-section">
-        <h2>Naše usluge</h2>
+        <div class="inline-div">
+            <h2>Naše usluge</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
 
         <div class="grid-3-col">
             <div class="services-card">
                     <h3 class="green-text">Personalni trening</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="inline-div services-link">
-                        <strong>pogledaj detaljnije</strong>
-                        <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
-                    </div>
             </div>
 
             <div class="services-card">
                     <h3 class="green-text">Polu-personalni trening</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="inline-div services-link">
-                        <strong>pogledaj detaljnije</strong>
-                        <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
-                    </div>
             </div>
 
             <div class="services-card">
                     <h3 class="green-text">Grupni trening</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="inline-div services-link">
-                        <strong>pogledaj detaljnije</strong>
-                        <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
-                    </div>
             </div>
         </div>
 
-        <button class="primary-button green">pogledaj detaljnije</button>
+        <button class="primary-button green">pogledaj više</button>
     </section>
 
     <section class="home-gym-section">
-        <h2>Naše teretane</h2>
+        <div class="inline-div">
+            <h2>Naše teretane</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
 
         <div class="grid-3-col">
             <div class="gym-card gym1">
                 <div class="black-mask">
                     <h3 class="orange-text">GYM 1</h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="secondary-button">pogledaj detaljnije</button>
+                    <button class="secondary-button gym-button" id="gym-1">pogledaj detaljnije</button>
                 </div>
             </div>
 
@@ -107,7 +101,7 @@
                 <div class="black-mask">
                     <h3 class="orange-text">GYM 2</h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="secondary-button">pogledaj detaljnije</button>
+                    <button class="secondary-button gym-button" id="gym-2">pogledaj detaljnije</button>
                 </div>
             </div>
 
@@ -115,14 +109,17 @@
                 <div class="black-mask">
                     <h3 class="orange-text">GYM 3</h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="secondary-button">pogledaj detaljnije</button>
+                    <button class="secondary-button gym-button" id="gym-3">pogledaj detaljnije</button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="team-section">
-        <h2>Upoznajte naše članove ekipe</h2>
+        <div class="inline-div">
+            <h2>Upoznajte naše članove ekipe</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
 
         <div class="grid-3-col">
             <div class="team-card" id="dejan">
@@ -154,21 +151,16 @@
                     <strong>Vidimo se na treningu!</strong>
                 </div>
             </div>
-
-            <div class="team-card" id="markec">
-                <div class="team-name">
-                    <h3>Stefan Marković</h3>
-                    <p>Treci trener sto se tice jaceg dela tima je Stefan Markovic poznatiji kao Markec.</p>
-                    <p>Dok je studirao radio je u nekoliko teretana u Beogradu i nakon privodjenja studija kraju vratio se u radni grad gde smo se vrlo lako dogovorili za prosirenje saradnje i sto se teretane tice.</p>
-                    <p>Stefana odlikuje to sto od svakog vezbaca trazi 110%, gleda da iz Vas izvuce maksimum i da sto bolje odradite trening. Dubokog glasa, profesionalan i uvek zanimljiv sa njegovim pricama odradicete trening sa njim, a da necete ni osetiti!</p>
-                    <strong>Vidimo se na treningu!</strong>
-                </div>
-            </div>
         </div>
+
+        <button class="primary-button meet-members">Pogledaj sve članove</button>
     </section>
 
     <section class="testimonial-section">
-        <h2>Šta misle naši vežbači</h2>
+        <div class="inline-div">
+            <h2>Šta misle naši vežbači</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
 
         <div class="container">
             <div class="slider">
@@ -205,16 +197,6 @@
                 <button class="nav-btn next">❯</button>
 
                 <div class="slider-dots" id="sliderDots"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-card">
-                <h2>Ne čekajte - zagovorite vaš termin odmah!</h2>
-                <p>Ne čekaj ponedeljak – najbolji trenutak da počneš je upravo sada! Zakaži svoj termin i napravi prvi korak ka snažnijem i zdravijem sebi. Tvoja transformacija počinje onog trenutka kada odlučiš da kreneš.</p>
-                <button class="primary-button">Kontaktiraj nas</button>
             </div>
         </div>
     </section>

@@ -11,8 +11,221 @@
 {% block content %}
     <main>
         <section class="about-hero-section">
-            <h1>Testirammm</h1>
-            <p>11111</p>
+            <div class="grid-2-col">
+                <div class="centered-cell">
+                    <h1><span class="heading-span">Fitness Centar Spartans Gym</span><br>mesto gde se dešavaju čuda!</h1>
+                    <p>Naše teretane nisu samo mesta gde se dižu tegovi - naše teretane su mesta gde možete da se ispričate, zabavite i istrenirate uz najstručniju pomoć koju možete da dobijete.</p>
+                </div>
+
+                <div class="centered-cell">
+                    <img class="about-img" src="{{ url_for('static', filename='slike/gym1.jpg') }}" alt="">
+                </div>
+            </div>
         </section>
     </main>
+
+    <section class="about-gym-section">
+        <div class="container">
+            <div class="inline-div">
+                <div class="grid-2-col bigger-right no-horisontal-gap">
+                    <!-- PRVI RED -->
+                    <div class="centered-div">
+                        <div class="circle">1</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div>
+                        <img src="{{ url_for('static', filename='slike/history.png') }}" alt="ikonica istorije">
+                        <h3>Istorija teretane</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec netus, massa venenatis malesuada gravida et eleifend parturient pretium facilisi aptent, velit integer curae praesent fusce habitant viverra est. Magnis auctor netus bibendum curabitur dis magna lobortis, scelerisque et proin tincidunt semper rutrum molestie, urna blandit litora fusce nisl quis.</p>
+                    </div>
+
+                    <!-- DRUGI RED -->
+                     <div class="centered-div">
+                        <div class="circle">2</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div>
+                        <img src="{{ url_for('static', filename='slike/mission.png') }}" alt="ikonica misije">
+                        <h3>Misija teretane</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec netus, massa venenatis malesuada gravida et eleifend parturient pretium facilisi aptent, velit integer curae praesent fusce habitant viverra est. Magnis auctor netus bibendum curabitur dis magna lobortis, scelerisque et proin tincidunt semper rutrum molestie, urna blandit litora fusce nisl quis.</p>
+                    </div>
+
+                    <!-- TRECI RED -->
+                     <div class="centered-div">
+                        <div class="circle">3</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div>
+                        <img src="{{ url_for('static', filename='slike/vision.png') }}" alt="ikonica vizije">
+                        <h3>Vizija teretane</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec netus, massa venenatis malesuada gravida et eleifend parturient pretium facilisi aptent, velit integer curae praesent fusce habitant viverra est. Magnis auctor netus bibendum curabitur dis magna lobortis, scelerisque et proin tincidunt semper rutrum molestie, urna blandit litora fusce nisl quis.</p>
+                    </div>
+
+                    <!-- CETVRTI RED -->
+                     <div class="centered-div">
+                        <div class="circle">4</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div>
+                        <img src="{{ url_for('static', filename='slike/values.png') }}" alt="ikonica vrednosti">
+                        <h3>Vrednosti teretane</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec netus, massa venenatis malesuada gravida et eleifend parturient pretium facilisi aptent, velit integer curae praesent fusce habitant viverra est. Magnis auctor netus bibendum curabitur dis magna lobortis, scelerisque et proin tincidunt semper rutrum molestie, urna blandit litora fusce nisl quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="founder-section" id="clanovi"> 
+        <div class="grid-2-col">
+            <div class="left-centered-cell">
+                <div class="inline-div">
+                    <h2>Upoznajte mene - <span class="heading-span">Dejana Mladenović</span></h2>
+                    <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec netus, massa venenatis malesuada gravida et eleifend parturient pretium facilisi aptent, velit integer curae praesent fusce habitant viverra est. Magnis auctor netus bibendum curabitur dis magna lobortis, scelerisque et proin tincidunt semper rutrum molestie, urna blandit litora fusce nisl quis.</p>
+                <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                <p>Ac neque blandit habitant sapien parturient dapibus sagittis natoque aliquet vehicula, a congue cras himenaeos nascetur quam sodales dignissim vestibulum lacus, nisi proin posuere ultricies augue mattis nisl semper facilisis</p>
+                <p>Dictumst cubilia enim massa natoque sollicitudin luctus mauris felis viverra dui, ac non nulla varius malesuada penatibus aliquet arcu suspendisse, justo pellentesque vestibulum praesent et sem odio aliquam nunc. In dignissim nascetur ultricies etiam fringilla pulvinar netus euismod ante dui bibendum urna, accumsan pretium vitae curae dictumst ridiculus libero diam mattis ligula.</p>
+                <p>Dictumst cubilia enim massa natoque sollicitudin luctus mauris felis viverra dui, ac non nulla varius malesuada penatibus aliquet arcu suspendisse, justo pellentesque vestibulum praesent et sem odio aliquam nunc. In dignissim nascetur ultricies etiam fringilla pulvinar netus euismod ante dui bibendum urna, accumsan pretium vitae curae dictumst ridiculus libero diam mattis ligula.</p>
+                <p>Dictumst cubilia enim massa natoque sollicitudin luctus mauris felis viverra dui, ac non nulla varius malesuada penatibus aliquet arcu suspendisse, justo pellentesque vestibulum praesent et sem odio aliquam nunc. In dignissim nascetur ultricies etiam fringilla pulvinar netus euismod ante dui bibendum urna, accumsan pretium vitae curae dictumst ridiculus libero diam mattis ligula.</p>
+                
+                <div class="inline-div">
+                    <strong>Kontakt: </strong>
+
+                    <a href="https://www.instagram.com/dejan_mladenovic_condition/" target="_blank">
+                        <img class="small-icon" src="{{ url_for('static', filename="slike/instagram.png") }}" alt="ikonica instagrama">
+                    </a>
+
+                    <a href="https://wa.me/381693478669" target="_blank">
+                        <img class="small-icon" src="{{ url_for('static', filename="slike/whatsapp.png") }}" alt="ikonica whatsapp-a">
+                    </a>
+
+                    <a href="mailto:dejan.mladenovic992@gmail.com">
+                        <img class="small-icon" src="{{ url_for('static', filename="slike/email.png") }}" alt="ikonica mejla">
+                    </a>
+                </div>
+            </div>
+
+            <div class="centered-cell">
+                <img class="about-img" src="{{ url_for('static', filename="slike/dejan.jpg") }}" alt="Slika vlasnika Dejana Mladenovića">
+            </div>
+        </div>
+    </section>
+
+    <section class="team-about-section">
+        <div class="container">
+            <div class="inline-div">
+                <h2>Upoznajte ostatak tima</h2>
+                <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+            </div>
+
+            <div class="team-about-card">
+                <div class="grid-2-col no-horisontal-gap">
+                    <div class="left-centered-cell">
+                        <img class="team-card-img" src="{{ url_for('static', filename="slike/mali.jpg") }}" alt="Slika trenera Ivana Petrovića">
+                    </div>
+
+                    <div class="left-centered-cell">
+                        <h3>Ivan "Mali" Petrović</h3>
+
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+        
+                        <div class="inline-div">
+                            <strong>Kontakt: </strong>
+                            
+                            <a href="https://www.instagram.com/ivan_mali95/" target="_blank">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/instagram.png") }}" alt="ikonica instagrama">
+                            </a>
+
+                            <a href="https://wa.me/381691309962" target="_blank">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/whatsapp.png") }}" alt="ikonica whatsapp-a">
+                            </a>
+
+                            <a href="mailto:ivanmali95@gmail.com">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/email.png") }}" alt="ikonica mejla">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-about-card">
+                <div class="grid-2-col no-horisontal-gap">
+                    <div class="left-centered-cell">
+                        <img class="team-card-img" src="{{ url_for('static', filename="slike/somi.jpg") }}" alt="Slika trenera Miloša Ivanovića">
+                    </div>
+
+                    <div class="left-centered-cell">
+                        <h3>Miloš Ivanović</h3>
+
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+        
+                        <div class="inline-div">
+                            <strong>Kontakt: </strong>
+
+                            <a href="https://www.instagram.com/somika_10/" target="_blank">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/instagram.png") }}" alt="ikonica instagrama">
+                            </a>
+
+                            <a href="https://wa.me/381691309962" target="_blank">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/whatsapp.png") }}" alt="ikonica whatsapp-a">
+                            </a>
+
+                            <a href="mailto:ivanmali95@gmail.com">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/email.png") }}" alt="ikonica mejla">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-about-card">
+                <div class="grid-2-col no-horisontal-gap">
+                    <div class="left-centered-cell">
+                        <img class="team-card-img" src="{{ url_for('static', filename="slike/markec.jpg") }}" alt="Slika trenera Stefana Markovića">
+                    </div>
+
+                    <div class="left-centered-cell">
+                        <h3>Stefan Marković</h3>
+
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+                        <p>Conubia gravida metus eget ultrices interdum tempus, rhoncus malesuada potenti curae suspendisse vulputate fermentum, egestas lectus ut eleifend nascetur.</p>
+        
+                        <div class="inline-div">
+                            <strong>Kontakt: </strong>
+
+                            <a href="https://www.instagram.com/markec96/" target="_blank">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/instagram.png") }}" alt="ikonica instagrama">
+                            </a>
+
+                            <a href="https://wa.me/381691309962" target="_blank">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/whatsapp.png") }}" alt="ikonica whatsapp-a">
+                            </a>
+
+                            <a href="mailto:ivanmali95@gmail.com">
+                                <img class="small-icon" src="{{ url_for('static', filename="slike/email.png") }}" alt="ikonica mejla">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

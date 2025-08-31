@@ -11,11 +11,16 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background-color: black;
     color: white;
     font-family: 'Poppins';
+    position: relative;
 }
 
 /* TEXT */
@@ -28,13 +33,22 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 .heading-span {
     background: -webkit-linear-gradient(left, var(--primary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.heading-icon {
+    width: 40px;
+}
+
 p {
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -57,6 +71,10 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.inline-div.full-width {
+    width: 100%;
 }
 
 .inline-div.bigger-gap {
@@ -102,6 +120,10 @@ section {
     flex-direction: column;
 }
 
+.container.smaller {
+    width: 70vw;
+}
+
 .primary-button {
     padding: 15px 25px;
     background-color: var(--accent);
@@ -145,6 +167,12 @@ section {
     color: white;
 }
 
+.secondary-button.active {
+    box-shadow: inset 230px 0px 5px var(--primary);
+    color: white;
+    margin-top: -10px;
+}
+
 ul {
     padding: 0;
 }
@@ -159,6 +187,14 @@ ul {
 
 .grid-2-col.bigger-left {
     grid-template-columns: 1.5fr 1fr;
+}
+
+.grid-2-col.bigger-right {
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.no-horisontal-gap {
+    gap: 20px 0;
 }
 
 .grid-3-col {
@@ -182,6 +218,10 @@ ul {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.left-centered-cell.justify {
+    justify-content: space-between;
 }
 
 .right-centered-cell {
@@ -210,6 +250,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    transition: all 300ms ease-in-out;
+}
+
+nav.hide {
+    transform: translateY(-100%);
 }
 
 .nav-links {
@@ -444,7 +489,8 @@ nav {
 }
 
 .testimonial-img {
-    width: 240px;
+    width: 160px;
+    height: 160px;
     border-radius: 100%;
 }
 
@@ -544,6 +590,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(var(--secondary), black);
 }
 
 .footer-container {
@@ -554,7 +601,7 @@ footer {
     gap: 20px;
 }
 
-.footer-icon {
+.small-icon {
     width: 30px;
 }
 
@@ -572,3 +619,394 @@ footer {
 }
 
 /* ABOUT PAGE */
+.about-hero-section {
+    height: 90vh;
+    background-image: linear-gradient(black, var(--secondary));
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 10px;
+} 
+
+.about-gym-section {
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+.circle {
+    border: 2px solid var(--primary);
+    border-radius: 100%;
+    padding: 5px 20px;
+    font-size: 2rem;
+}
+
+.line {
+    border: 1px solid var(--primary);
+    width: 1px;
+    height: 100px;
+}
+
+.founder-section {
+    background-image: linear-gradient(black, var(--secondary));
+}
+
+.team-about-section {
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+.team-about-card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 1px 1px 5px var(--accent);
+    border-radius: 10px;
+    margin: 15px 0 15px 0;
+}
+
+.team-card-img {
+    width: 30vw;
+    border-radius: 10px;
+}
+
+/* Cela traka scrolla */
+.service-popup::-webkit-scrollbar {
+    width: 5px;        /* širina scrollbara */
+}
+
+/* Pozadina trake scrolla */
+.service-popup::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);  
+    border-radius: 10px;
+}
+
+/* Klizač scrolla */
+.service-popup::-webkit-scrollbar-thumb {
+    background: var(--accent);  /* koristiš boju sajta */
+    border-radius: 10px;
+}
+
+/* Klizač hover */
+.service-popup::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+/* CONTACT PAGE */
+.contact-hero-section {
+    padding: 25vh 0 15vh 0;
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+form {
+    width: 100%;
+}
+
+input.primary-button {
+    width: auto;
+}
+
+input,
+textarea {
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--accent);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+}
+
+/* BLOG PAGE */
+.blog-section {
+    padding-top: 25vh;
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+.blog-small-img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* BLOG POST PAGE */
+.blog-post-hero {
+    padding-top: 25vh;
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+.blog-img-div {
+    width: 100%;
+    height: 50vh;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-big-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.blog-post-heading {
+    position: absolute;
+}
+
+.sticky-div {
+    position: sticky;
+    top: 20%;
+}
+
+.sticky-div ol li {
+    margin-bottom: 10px;
+}
+
+/* GYM PAGES */
+.gym-hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.gym-hero-section.gym1 {
+    background-image: url("/static/slike/gym1-dark.png");
+}
+
+.gym-hero-section.gym2 {
+    background-image: url("/static/slike/gym2-dark.png");
+}
+
+.gym-hero-section.gym3 {
+    background-image: url("/static/slike/gym3-dark.png");
+}
+
+.down-arrow {
+    transform: rotate(90deg);
+    transition: all 200ms ease-in;
+}
+
+.down-arrow:hover {
+    transform: rotate(90deg) translateX(10px);
+}
+
+.gym-info-section {
+    background-image: linear-gradient(black, var(--secondary));
+}
+
+.map {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-gym-section {
+    background-image: linear-gradient(var(--secondary), black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.gym-small-img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--primary);
+}
+
+.gym-services-section {
+    background-image: linear-gradient(black, var(--secondary));
+}
+
+.gym-services-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--accent);
+    gap: 15px;
+}
+
+.gym-services-card ul {
+    padding-left: 20px;
+}
+
+.gym-services-card ul li {
+    margin-bottom: 10px;
+}
+
+.gym-services-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gym-gallery-section {
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+.tab-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    margin-top: 50px;
+}
+
+.gallery-grid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.gallery-grid.active {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    width: 50vw;
+    height: 70vh;
+    object-fit: contain;
+    transition: opacity 0.3s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.lightbox-nav {
+    margin-top: 20px;
+}
+
+.lightbox-nav button {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.lightbox-nav button.hidden {
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+.prev-btn, .next-btn {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.services-section {
+    padding-top: 25vh;
+    background-image: linear-gradient(var(--secondary), black);
+}
+
+.popup-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 10000;
+}
+
+.popup-mask.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 30vh 0 0 0;
+}
+
+.service-popup {
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 1px 1px 5px var(--accent);
+    background-color: black;
+    display: none;
+    gap: 20px;
+    max-height: 80vh; 
+    overflow-y: auto;
+}
+
+.service-popup.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.popup-img {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.close-popup-btn {
+    font-size: 1.5rem;
+    color: var(--accent);
+    position: absolute;
+    top: 10px; right: 20px;
+    cursor: pointer;
+}

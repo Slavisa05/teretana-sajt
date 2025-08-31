@@ -8,6 +8,7 @@
             Title block
         {% endblock title %}
     </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='slike/logo.ico') }}">
     <meta name="description" content="{% block description %} Description {% endblock description %}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -15,6 +16,8 @@
     {% include "navbar.html" %}
 
     {% block content %}{% endblock content %}
+
+    {% include "cta.html" %}
 
     {% include "footer.html" %}
 

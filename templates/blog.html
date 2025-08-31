@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym blog
+{% endblock title %}
+
+{% block description %}
+    Deskripcija 6
+{% endblock description %}
+
+{% block content %}
+    <main>
+        <section class="blog-section">
+            <div class="inline-div">
+                <h1>Blog postovi</h1>
+                <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+            </div>
+            
+            <div class="grid-3-col">
+                <div class="centered-cell">
+                    <a href="{{ url_for('blog_post1') }}">
+                        <div class="inline-div full-width">
+                            <p class="green-text">31.08.2025.</p>
+                        </div>
+                        <img class="blog-small-img" src="{{ url_for('static', filename='slike/dejan.jpg') }}" alt="">
+                        <h2>Kako izabrati odgovarajući plan treninga</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content %}

@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym usluge
+{% endblock title %}
+
+{% block description %}
+    Deskripcija 4
+{% endblock description %}
+
+{% block content %}
+    <main>
+        <section class="services-section">
+            <div class="grid-3-col">
+                <div class="services-card">
+                        <h3 class="green-text">Personalni trening</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="inline-div services-link" id="personal-training-btn">
+                            <strong>pogledaj detaljnije</strong>
+                            <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
+                        </div>
+                </div>
+
+                <div class="services-card">
+                        <h3 class="green-text">Polu-personalni trening</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="inline-div services-link" id="half-personal-training-btn">
+                            <strong>pogledaj detaljnije</strong>
+                            <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
+                        </div>
+                </div>
+
+                <div class="services-card">
+                        <h3 class="green-text">Grupni trening</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="inline-div services-link" id="group-training-btn">
+                            <strong>pogledaj detaljnije</strong>
+                            <img class="right-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="desna strelica - ikonica">
+                        </div>
+                </div>
+            </div>
+
+            <div class="popup-mask">
+                <div class="service-popup" id="personal-training">
+                    <p class="close-popup-btn">X</p>
+                    <img class="popup-img" src="{{ url_for('static', filename='slike/dejan.jpg') }}" alt="">
+                    <h2>Personalni trening</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <strong>Ne čekaj - zakaži tvoj prvi personalni trening još danas!</strong>
+                </div>
+
+                <div class="service-popup" id="half-personal-training">
+                    <p class="close-popup-btn">X</p>
+                    <img class="popup-img" src="{{ url_for('static', filename='slike/mali.jpg') }}" alt="">
+                    <h2>Polu-personalni trening</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <strong>Ne čekaj - zakaži tvoj prvi polu-personalni trening još danas!</strong>
+                </div>
+
+                <div class="service-popup" id="group-training">
+                    <p class="close-popup-btn">X</p>
+                    <img class="popup-img" src="{{ url_for('static', filename='slike/markec.jpg') }}" alt="">
+                    <h2>Grupni trening</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <strong>Ne čekaj - zakaži tvoj prvi polu-personalni trening još danas!</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content %}

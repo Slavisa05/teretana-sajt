@@ -1,0 +1,240 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym 2
+{% endblock title %}
+
+{% block description %}
+    Gym 2
+{% endblock description %}
+
+{% block content %}
+    <main>
+        <section class="gym-hero-section gym2">
+            <div class="centered-div">
+                <h1>Dobrodošli u <span class="heading-span">Fitness Centar Spartans Gym 2!</span></h1>
+                <p>Najmanja teretana sa najvećim ljudima!</p>
+
+                <a href="#2">
+                    <img class="down-arrow" src="{{ url_for('static', filename='slike/right-arrow.png') }}" alt="donja strelica - ikonica">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <section class="gym-info-section" id="2">
+        <div class="grid-2-col">
+            <div>
+                <iframe
+                    class-"map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.9047126376577!2d20.1656856!3d44.3713474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759f90e6e5b23bf%3A0x6bb172b0d6f9495c!2sFitness%20Centar%20%22Spartans%20Gym%22%20Lajkovac!5e1!3m2!1ssr!2srs!4v1756667955187!5m2!1ssr!2srs" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="left-centered-cell justify">
+                <div class="inline-div">
+                    <img class="small-icon" src="{{ url_for('static', filename='slike/clock.png') }}" alt="ikonica sata">
+                    <p>06:00h - 22:00h, ponedeljak - subota</p>
+                </div>
+
+                <div class="inline-div">
+                    <img class="small-icon" src="{{ url_for('static', filename='slike/location.png') }}" alt="ikonica lokacije">
+                    <p>Lajkovac, Ub</p>
+                </div>
+
+                <div class="inline-div">
+                    <img class="small-icon" src="{{ url_for('static', filename='slike/phone.png') }}" alt="ikonica telefona">
+                    <p>069-3478669</p>
+                </div>
+
+                <div class="inline-div">
+                    <img class="small-icon" src="{{ url_for('static', filename='slike/email.png') }}" alt="ikonica mejla">
+                    <p>dejan.mladenovic992@gmail.com</p>
+                </div>
+
+                <div class="inline-div">
+                    <img class="small-icon" src="{{ url_for('static', filename='slike/instagram.png') }}" alt="ikonica instagrama">
+                    <a href="https://www.instagram.com/fitness_centar_spartans_gym_la/" target="_blank">fitness_centar_spartans_gym_la</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-gym-section">
+        <div class="grid-2-col">
+             <div class="left-centered-cell">
+                <div class="inline-div">
+                    <h2>Kako se Spartans Gym našao u Lajkovcu?</h2>
+                    <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+
+             <div class="centered-cell">
+                <img class="gym-small-img" src="{{ url_for('static', filename='slike/gym1.jpg') }}" alt="">
+                <img class="gym-small-img" src="{{ url_for('static', filename='slike/gym2.jpg') }}" alt="">
+             </div>
+        </div>
+
+        <div class="grid-2-col">
+            <div class="centered-cell">
+                <img class="gym-small-img" src="{{ url_for('static', filename='slike/gym1.jpg') }}" alt="">
+            </div>
+
+            <div class="left-centered-cell">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gym-services-section">
+        <div class="inline-div">
+            <h2>Usluge koje nudimo u teretani</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
+        
+        <div class="grid-3-col">
+            <div class="gym-services-card">
+                <h3>Personalni trening</h3>
+                <img class="gym-services-img" src="{{ url_for('static', filename='slike/gym1.jpg') }}" alt="">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><strong>Vreme trajanja:</strong> 1 sat</li>
+                    <li><strong>Cena:</strong> 1.500 din po treningu</li>
+                </ul>
+            </div>
+
+            <div class="gym-services-card">
+                <h3>Polu-personalni trening</h3>
+                <img class="gym-services-img" src="{{ url_for('static', filename='slike/gym1.jpg') }}" alt="">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><strong>Vreme trajanja:</strong> 1 sat</li>
+                    <li><strong>Cena:</strong> 1.500 din po treningu</li>
+                </ul>
+            </div>
+
+            <div class="gym-services-card">
+                <h3>Grupni trening</h3>
+                <img class="gym-services-img" src="{{ url_for('static', filename='slike/gym1.jpg') }}" alt="">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><strong>Vreme trajanja:</strong> 1 sat</li>
+                    <li><strong>Cena:</strong> 4.500 din mesečno</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="gym-gallery-section">
+        <div class="container">
+            <div class="inline-div">
+                <h2>Galerija teretane</h2>
+                <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+            </div>
+            
+            <div class="tab-wrapper">
+                <div class="gallery-grid active" id="gym1-div">
+                    <img class="gallery-item gym1" data-group="gym1" src="{{ url_for('static', filename='slike/dejan.jpg') }}" alt="gym 1 - prva slika">
+                    <img class="gallery-item gym1" data-group="gym1" src="{{ url_for('static', filename='slike/gym2.jpg') }}" alt="gym 1 - druga slika">
+                    <img class="gallery-item gym1" data-group="gym1" src="{{ url_for('static', filename='slike/gym3.jpg') }}" alt="gym 1 - treca slika">
+                </div>
+            </div>
+
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-img" src="" alt="">
+                    <div class="lightbox-nav">
+                        <button class="prev-btn">❮</button>
+                        <button class="next-btn">❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gym-team-section">
+        <div class="inline-div">
+            <h2>Treneri u ovoj teretani</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
+
+        <div class="grid-3-col">
+            <div class="team-card" id="somi"></div>
+
+            <div></div>
+
+            <div></div>
+
+            <div class="centered-cell">
+                <h3>Miloš Ivanović - direktor</h3>
+            </div>
+        </div>
+
+        <button class="primary-button">Pogledaj detaljnije o nama</button>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="inline-div">
+            <h2>Šta misle naši vežbači o ovoj terertani</h2>
+            <img class="heading-icon" src="{{ url_for('static', filename='slike/dumbbell.png') }}" alt="ikonica bučice">
+        </div>
+
+        <div class="container">
+            <div class="slider">
+                <div class="slides" id="slideContainer">
+                    <div class="slide">
+                        <img class="testimonial-img" src="{{ url_for('static', filename='slike/dosta.png') }}" alt="">
+                        <div class="centered-div">
+                            <h3>Marko Marković</h3>
+                            <p>Treneri su odlični, za svaku pohvalu. Prostor je lep i funkcionalan. Sa zadovoljstvom idem na vežbanje, osećam se odlično💪. Preporučujem da dođete i uverite se sami. Želim im sve najbolje od ❤…</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="testimonial-img" src="{{ url_for('static', filename='slike/danica.png') }}" alt="">
+                        <div class="centered-div">
+                            <h3>Danica Kosanić</h3>
+                            <p>❤Ivan❤ ❤Dejan❤ <br> Divni momci, dobri treneri. Osetljivi, ljubazni, jednostavno znaju svoj posao. Topla preporuka od ❤ svima. Nećete pogrešiti-</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img class="testimonial-img" src="{{ url_for('static', filename='slike/milan.png') }}" alt="">
+                        <div class="centered-div">
+                            <h3>Milan Đokić</h3>
+                            <p>Top fitnes klub i teretana u Ubu 👍 pozdrav za vlasnika Dejana i trenera Stefana…</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="nav-btn prev">❮</button>
+                <button class="nav-btn next">❯</button>
+
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
