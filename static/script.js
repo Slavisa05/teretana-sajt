@@ -34,6 +34,14 @@ if (dropdown && dropdownToggle) {
     });
 }
 
+// hamburger
+const toggleBtn = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
 // TESTIMONIAL SLIDER
 const dotsContainer = document.getElementById('sliderDots');
 const slides = document.querySelectorAll('.slide');
@@ -121,7 +129,7 @@ galleryButtons.forEach(btn => {
 // LIGHTBOX
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
-const closeBtn = document.querySelector('.close-popup-btn');
+const closeBtn = document.querySelector('.close-btn');
 const galleryItems = document.querySelectorAll('.gallery-item');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');

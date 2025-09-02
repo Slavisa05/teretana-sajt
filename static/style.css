@@ -52,6 +52,10 @@ p {
     text-align: justify;
 }
 
+.centered {
+    text-align: center;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -233,6 +237,11 @@ ul {
 /* NAVBAR */
 .menu-toggle {
     display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
 }
 
 .logo {
@@ -559,6 +568,8 @@ nav.hide {
     opacity: 1;
 }
 
+/* CTA */
+
 .cta-section {
     background-image: linear-gradient(black, var(--secondary));
 }
@@ -608,6 +619,10 @@ footer {
 .footer-logo {
     border-radius: 10px;
     width: 240px;
+}
+
+.footer-link {
+    text-decoration: underline;
 }
 
 .legals {
@@ -1009,4 +1024,400 @@ textarea:focus {
     position: absolute;
     top: 10px; right: 20px;
     cursor: pointer;
+}
+
+/* RESPONZIVNOST */
+@media (max-width: 785px) {
+    /* TEXT */
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 90%;
+    }
+
+    small {
+        text-align: center;
+    }
+
+    /* DIV'S, BUTTON'S, LIST'S, SECTION'S */
+    section {
+        padding: 5vh 0 5vh 0;
+    }
+
+
+    /* GRID */
+    .grid-2-col,
+    .grid-3-col,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2-col.bigger-right {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .left-centered-cell,
+    .right-centered-cell {
+        align-items: center;
+    }
+
+    .left-centered-cell.justify {
+        align-items: start;
+    }
+
+    /* NAVBAR */
+    .logo {
+        width: 100px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-img {
+        width: 120px;
+    }
+
+    .nav-img.ttt {
+        width: 100px;
+    }
+    
+    .nav-links {
+        grid-column: 4;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 130px;
+        right: 0;
+        width: 100vw;
+        z-index: 1001;
+        display: flex; 
+        overflow-y: auto;
+        gap: 0;
+        padding-left: 20px;
+    }
+
+    .nav-links.active {
+        max-height: 100vh;
+    }
+
+    .nav-links li {
+        width: 100%;      
+    }
+
+    .nav-links li a {
+        display: block;         
+        width: 100%;
+        padding: 15px 15px;
+    }
+
+    .nav-links li a:hover {
+        border: 0;
+        color: var(--accent);
+    }
+
+    .dropdown {
+        width: 100%;
+        position: static;
+    }
+
+    .dropdown-menu {
+        position: static;    
+        min-width: 0;
+        width: 100%;      
+        box-shadow: none;
+        border-radius: 0;
+        background: var(--black);
+        padding: 0;
+        margin: 0;
+        z-index: 1002;
+        display: none;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    /* HOMEPAGE */
+    .hero-section {
+        height: auto;
+        padding-top: 20vh;
+    }
+
+    #my-video {
+        width: auto;
+    }
+
+    .stats-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .centered-div.right {
+        border-right: none;
+    }
+
+    .team-name {
+        transform: translateY(0);
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .slider {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .slide {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* CTA */
+    .cta-card {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .cta-card h2 {
+        text-align: center;
+    }
+
+    .cta-card p {
+        width: 90%;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container .inline-div.bigger-gap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        width: 100%;
+    }
+
+    .footer-container .inline-div.bigger-gap .centered-div.left .inline-div {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    /* ABOUT PAGE */
+    .about-hero-section {
+        padding-top: 25vh;
+        padding-bottom: 20vh;
+    }
+
+    .about-img {
+        width: 80%;
+        height: 50vh;
+    }
+
+    .about-img.hero {
+        height: 40vh;
+    }
+
+    .line {
+        height: 250px;
+    }
+
+    .grid-2-col .bigger-right .no-horisontal-gap {
+        gap: 50px;
+    }
+
+    .team-card-img {
+        width: 80%;
+        height: 50vh;
+    }
+
+    /* SERVICES PAGE */
+    .popup-mask.active {
+        padding: 0;
+    }
+
+    .service-popup {
+        width: 80%;
+        max-height: 70vh;
+        margin-top: -40vh;
+    }
+
+    /* BLOG POST PAGE */
+    .blog-big-img {
+        height: 40vh;
+    }
+
+    .container.smaller {
+        width: 90%;
+    }
+
+    .blog-img-div {
+        height: auto;
+    }
+
+    .blog-img-div h1 {
+        text-align: center;
+    }
+
+    .sticky-div {
+        display: none;
+    }
+
+    /* GYM PAGES */
+    .gym-hero-section .centered-div h1 {
+        text-align: center;
+    }
+ 
+    .gym-services-img {
+        width: 80%;
+    }
+
+    .gym-team-section .grid-3-col {
+        gap: 10px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .lightbox-content {
+        width: 90%;
+    }
+
+    #lightbox-img {
+        width: 80%;
+    }
+
+    #dejan {
+        grid-row: 1;
+    }
+
+    #dejan-text {
+        grid-row: 2;
+    }
+
+    #mali {
+        grid-row: 3;
+    }
+
+    #mali-text {
+        grid-row: 4;
+    }
+
+    #markec {
+        grid-row: 5;
+    }
+
+    #markec-text {
+        grid-row: 6;
+    }
+}
+
+@media (max-width: 480px) {
+    strong {
+        text-align: center;
+    }
+
+    .inline-div {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .heading-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-btn {
+        padding: 5px 10px;
+    }
+
+    .nav-btn.next {
+        left: 50px;
+    }
+
+    .team-card {
+        height: 60vh;
+    }
+
+    .team-name {
+        gap: 20px;
+    }
+
+    .about-img.hero {
+        height: 30vh;
+        width: 90%;
+    }
+
+    .about-img {
+        height: 35vh;
+        width: 90%;
+    }
+
+    .team-card-img {
+        height: 35vh;
+        width: 90%;
+    }
+
+    .line {
+        height: 420px;
+    }
+
+    .service-popup {
+        padding: 10px 0;
+        margin-top: -65vh;
+        width: 90%;
+    }
+
+    .close-popup-btn {
+        right: 10px;
+    }
+
+    .inline-div.full-width {
+        justify-content: start;
+    }
+
+    .map {
+        height: 350px;
+    }
+
+    .left-centered-cell.justify .inline-div {
+        justify-content: start;
+    }
+
+    .gym-small-img,
+    .gym-services-img {
+        width: 90%;
+    }
+
+    .gallery-item {
+        height: 30vh;
+    }
+
+    .team-card {
+        height: 40vh;
+    }
 }
