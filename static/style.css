@@ -1027,26 +1027,71 @@ textarea:focus {
 }
 
 /* RESPONZIVNOST */
+@media (max-width: 1500px) and (min-width: 1100px) {
+    .footer-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container .inline-div.bigger-gap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        width: 100%;
+    }
+
+    .footer-container .inline-div.bigger-gap .centered-div.left .inline-div {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 768px) {
+    .footer-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container .inline-div.bigger-gap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        width: 100%;
+    }
+
+    .footer-container .inline-div.bigger-gap .centered-div.left .inline-div {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+}
+
 @media (max-width: 785px) {
     /* TEXT */
 
     h1 {
         font-size: 2.2rem;
+        max-width: 95%;
     }
 
     h2 {
         font-size: 1.7rem;
+        max-width: 95%;
     }
 
     h3 {
         font-size: 1.3rem;
+        max-width: 95%;
     }
 
     p {
         display: flex;
         flex-direction: column; 
         align-items: center; 
-        max-width: 90%;
+        max-width: 95%;
     }
 
     small {
@@ -1158,7 +1203,8 @@ textarea:focus {
     /* HOMEPAGE */
     .hero-section {
         height: auto;
-        padding-top: 20vh;
+        padding-top: 30vh;
+        overflow: hidden;
     }
 
     #my-video {
@@ -1227,8 +1273,8 @@ textarea:focus {
 
     /* ABOUT PAGE */
     .about-hero-section {
-        padding-top: 25vh;
-        padding-bottom: 20vh;
+        height: auto;
+        padding-top: 20vh;
     }
 
     .about-img {
@@ -1360,7 +1406,7 @@ textarea:focus {
     }
 
     .team-card {
-        height: 60vh;
+        height: 50vh;
     }
 
     .team-name {
@@ -1417,7 +1463,7 @@ textarea:focus {
         height: 30vh;
     }
 
-    .team-card {
+    .team-card.gym-page {
         height: 40vh;
     }
 }
